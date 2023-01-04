@@ -19,7 +19,7 @@ public class ContactServiceImpl implements IContactService {
 		
 		contact = repo.save(contact);
 		if(contact.getCid() != null)
-		   return "Contact saved with::"+contact.getCid();
+		   return "Contact saved with::";
 		else
 			return "Contact failed to save";
 	}
